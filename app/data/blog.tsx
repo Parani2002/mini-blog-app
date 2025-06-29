@@ -48,6 +48,13 @@ const blogs = [
         content: "This is the content of blog 8",
         date: "2023-10-08",
     },
+    {
+        id:9,
+        title: "Blog 9",
+        content: "This is the content of blog 9",
+        date: "2023-10-09",
+    },
+  
 ]
 
 export default blogs;
