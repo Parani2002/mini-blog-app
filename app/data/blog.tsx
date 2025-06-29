@@ -1,60 +1,41 @@
 const blogs = [
     {
-        id:1,
-        title: "Blog 1",
-        content: "This is the content of blog 1",
+        id: 1,
+        title: "The Future of JavaScript in 2025",
+        content: "JavaScript continues to evolve with new frameworks and features like Temporal API and decorators. In this blog, we explore what's coming and how to prepare for it.",
         date: "2023-10-01",
-
     },
     {
-        id:2,
-        title: "Blog 2",
-        content: "This is the content of blog 2",
-        date: "2023-10-02",
+        id: 2,
+        title: "A Beginner's Guide to React Hooks",
+        content: "React Hooks revolutionized how we manage state and side effects in components. This guide walks through useState, useEffect, and custom hooks for beginners.",
+        date: "2025-06-02",
     },
     {
-        id:3,
-        title: "Blog 3",
-        content: "This is the content of blog 3",
+        id: 3,
+        title: "Why Tailwind CSS is Gaining So Much Popularity",
+        content: "Tailwind CSS provides a utility-first approach that speeds up UI development. Learn how it's changing frontend workflows and how to get started.",
         date: "2023-10-03",
     },
     {
-        id:4,
-        title: "Blog 4",
-        content: "This is the content of blog 4",
+        id: 4,
+        title: "Top 5 VS Code Extensions for Web Developers",
+        content: "Supercharge your productivity with these powerful VS Code extensions like Prettier, ESLint, GitLens, and more. Here's why they matter.",
         date: "2023-10-04",
     },
     {
-        id:5,
-        title: "Blog 5",
-        content: "This is the content of blog 5",
+        id: 5,
+        title: "Understanding REST APIs with Practical Examples",
+        content: "REST APIs form the backbone of modern web applications. This post breaks down GET, POST, PUT, DELETE methods with practical Node.js examples.",
         date: "2023-10-05",
     },
     {
-        id:6,
-        title: "Blog 6",
-        content: "This is the content of blog 6",
+        id: 6,
+        title: "Debugging Like a Pro in Chrome DevTools",
+        content: "Learn the essential features of Chrome DevTools that can help you debug JavaScript code faster and more efficiently.",
         date: "2023-10-06",
     },
-    {
-        id:7,
-        title: "Blog 7",
-        content: "This is the content of blog 7",
-        date: "2023-10-07",
-    },
-    {
-        id:8,
-        title: "Blog 8",
-        content: "This is the content of blog 8",
-        date: "2023-10-08",
-    },
-    {
-        id:9,
-        title: "Blog 9",
-        content: "This is the content of blog 9",
-        date: "2023-10-09",
-    },
-  
-]
+
+];
 
 export default blogs;

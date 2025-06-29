@@ -8,25 +8,31 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-
+import { Button } from "@/components/ui/button"
+import { formatDistanceToNow } from 'date-fns';
 interface BlogsProps {
+  id: number;
   title: string;
   description: string;
+  date:string;
+
 }
 
-const Blog = ({title,description} : BlogsProps) => {
+const Blog = ({id,title,description,date} : BlogsProps) => {
   return (
     <Card>
   <CardHeader>
-    <CardTitle>{title}</CardTitle>
-    <CardDescription>{description}</CardDescription>
-    <CardAction>Card Action</CardAction>
+    <CardTitle>
+      <Button variant="link" className='text-blue-400'>{title}</Button>
+      </CardTitle>
+    {/* <CardDescription>{description}</CardDescription> */}
   </CardHeader>
   <CardContent>
-    <p>Card Content</p>
+    <p>{description}</p>
   </CardContent>
   <CardFooter>
-    <p>Card Footer</p>
+    
+<p>{formatDistanceToNow(new Date(date), { addSuffix: true })}</p>
   </CardFooter>
 </Card>
   )

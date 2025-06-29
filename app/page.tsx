@@ -13,16 +13,16 @@ export default function Home() {
       </div>
       {/* Main Content */}
       <div>
-<HomePage />
+        <HomePage />
       </div>
-    
-  
 
 
 
-<About />
-<Posts />
-<Footer />
+
+
+      
+      <Posts />
+      <Footer />
 
     </div>
   );
