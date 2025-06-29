@@ -6,14 +6,20 @@ import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen  flex flex-col justify-around">
+    <div className=" min-h-screen  flex flex-col justify-between">
       {/* Header */}
-      <section className="">
-    <Header />
-      </section>
-
-
+      <div>
+        <Header />
+      </div>
+      {/* Main Content */}
+      <div>
 <HomePage />
+      </div>
+    
+  
+
+
+
 <About />
 <Posts />
 <Footer />
