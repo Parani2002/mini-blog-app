@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     //<div className="bg-slate-950 min-h-screen text-white flex flex-col">
 
       
-<>
-      <main className="flex flex-1 items-center justify-center px-4">
+
+      <main className="flex flex-1 items-center justify-center px-4 p-16">
         <div className="text-center max-w-xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Welcome to MiniBlog ✍️
@@ -16,12 +17,18 @@ export default function HomePage() {
           </p>
 
           <div className="flex justify-center gap-4 flex-wrap">
-            <Button variant="default">View Blog Posts</Button>
-            <Button variant="secondary">Write a Post</Button>
+            <Button variant="default" asChild>
+              <Link href={"/posts"}> View Blog Posts</Link>
+              </Button>
+
+            <Button variant="secondary">
+              <Link href={"/posts/create"}> Write a Post</Link>
+            </Button>
+             
           </div>
         </div>
       </main>
-        </>
+       
     //</div>
   );
 }
