@@ -1,6 +1,6 @@
 import HomePage from "./pages";
-import About from "./pages/about";
-import Posts from "./pages/posts";
+
+import Post from './pages/posts'
 import Footer from "./pages/footer"
 import Header from "./components/Header";
 import { signIn } from "@/auth"
@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
 
-
+{/* 
   <form
       action={async () => {
         "use server"
@@ -26,10 +26,10 @@ export default function Home() {
       }}
     >
       <button type="submit">Signin with Google</button>
-    </form>
+    </form> */}
 
       
-      <Posts />
+     <Post/>
       <Footer />
 
     </div>

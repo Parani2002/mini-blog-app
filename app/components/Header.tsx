@@ -1,12 +1,15 @@
 
 import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuLabel, } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { auth } from "../../auth"
 
-
-export default function Header() {
+export default async function Header() {
+  const session = await auth();
+  console.log(session);
+  
    
   return (
     <header className="bg-slate-900 text-white px-6 py-4 shadow-md sticky w-full ">
@@ -32,6 +35,7 @@ export default function Header() {
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-slate-800 text-white border-slate-700">
+             <DropdownMenuLabel>{session?.user?.name ?? session?.user?.email ?? "User"}</DropdownMenuLabel>
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuItem>Logout</DropdownMenuItem>

@@ -1,5 +1,5 @@
 import React from 'react'
-import blogs from '../../data/blog'
+import blogs from '../data/blog'
 import Blog from '@/app/components/Blog'
 import { Button } from "@/components/ui/button"
 
