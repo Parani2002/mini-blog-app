@@ -35,6 +35,32 @@ const blogs = [
         content: "Learn the essential features of Chrome DevTools that can help you debug JavaScript code faster and more efficiently.",
         date: "2023-10-06",
     },
+    {
+        id: 7,
+        title: "Building Scalable Applications with Microservices",
+        content: "Microservices architecture allows for building scalable and maintainable applications. This blog explores its benefits and challenges.",
+        date: "2023-10-07",
+    },
+    {
+        id: 8,
+        title: "The Rise of TypeScript in Modern Development",
+        content: "TypeScript is becoming the standard for large-scale JavaScript applications. Discover its advantages and how to migrate from JavaScript.",
+        date: "2023-10-08",
+    },
+    {
+        id: 9,
+        title: "Web Accessibility Best Practices",
+        content: "Making your web applications accessible is crucial. This post covers best practices to ensure your site is usable by everyone, including those with disabilities.",
+        date: "2023-10-09",
+    },
+    {
+        id: 10,
+        title: "Exploring GraphQL vs REST APIs",
+        content: "GraphQL offers a flexible alternative to REST APIs. Learn about its advantages, use cases, and how to implement it in your projects.",
+        date: "2023-10-10",
+    },
+    
+
 
 ];
 

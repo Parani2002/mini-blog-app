@@ -1,37 +1,14 @@
-import HomePage from "./pages";
+import React from 'react'
+import HomePage from '.'
+import Posts from './LatestPosts'
 
-import Post from './pages/posts'
-import Footer from "./pages/footer"
-import Header from "./components/Header";
-import { signIn } from "@/auth"
-
-export default function Home() {
+const page = () => {
   return (
-    <div className=" min-h-screen  flex flex-col justify-between">
-      {/* Header */}
-      <div>
-        <Header />
-      </div>
-      {/* Main Content */}
-      <div>
+    <>
         <HomePage />
-      </div>
-
-
-{/* 
-  <form
-      action={async () => {
-        "use server"
-        await signIn("google")
-      }}
-    >
-      <button type="submit">Signin with Google</button>
-    </form> */}
-
-      
-     <Post/>
-      <Footer />
-
-    </div>
-  );
+        <Posts />
+    </>
+  )
 }
+
+export default page

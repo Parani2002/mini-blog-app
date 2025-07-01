@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+
 export default function HomePage() {
   return (
+
+
   
       <main className="flex flex-1 items-center justify-center px-4 p-16">
         <div className="text-center max-w-xl">
@@ -15,16 +18,17 @@ export default function HomePage() {
 
           <div className="flex justify-center gap-4 flex-wrap">
             <Button variant="default" asChild>
-              <Link href={"/posts"}> View Blog Posts</Link>
+              <Link href={"/blogs"}> View Blog Posts</Link>
               </Button>
 
             <Button variant="secondary">
-              <Link href={"/posts/create"}> Write a Post</Link>
+              <Link href={"/blogs/create"}> Write a Post</Link>
             </Button>
           
           </div>
         </div>
       </main>
+
        
   
   );
