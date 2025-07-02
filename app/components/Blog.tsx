@@ -28,7 +28,7 @@ const Blog = ({ id, title, description, date }: BlogsProps) => {
         <CardTitle>
           <div className='flex items-center gap-2'>
             <Button variant="link" className='text-blue-400'>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/blogs/${id}`}>
                 {title}
               </Link>
             </Button>
